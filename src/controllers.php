@@ -68,23 +68,23 @@ $app->match('/form', function() use ($app) {
     $form = $builder
         ->add('post_code', 'text', array(
             'constraints' => new Constraint(array(
-                'validator' => 'Zend\I18n\Validator\PostCode',
+                'validator' => 'postcode',
                 'options' => array('locale' => 'en_GB'),
             ))
         ))
         ->add('domain_name', 'text', array(
             'constraints' => new Constraint(array(
-                'validator' => 'Zend\Validator\Hostname',
+                'validator' => 'hostname',
             ))
         ))
-        ->add('iban', 'text', array(
+        ->add('isbn', 'text', array(
             'constraints' => new Constraint(array(
-                'validator' => 'Zend\Validator\Iban',
+                'validator' => 'isbn',
             ))
         ))
         ->add('credit_card_number', 'text', array(
             'constraints' => new Constraint(array(
-                'validator' => 'Zend\Validator\CreditCard',
+                'validator' => 'creditcard',
             ))
         ))
         ->getForm()

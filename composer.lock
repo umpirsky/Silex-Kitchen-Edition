@@ -977,18 +977,18 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "73ab8ff50c53a3a6046b3a499bd0c6412afc344f"
+                "reference": "da34d73b4ae4797c3d8f4141c0cd454175ca4396"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/zipball/73ab8ff50c53a3a6046b3a499bd0c6412afc344f",
-                "reference": "73ab8ff50c53a3a6046b3a499bd0c6412afc344f",
+                "url": "https://github.com/fabpot/Twig/zipball/da34d73b4ae4797c3d8f4141c0cd454175ca4396",
+                "reference": "da34d73b4ae4797c3d8f4141c0cd454175ca4396",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1348869347",
+            "time": "1348934698",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1037,20 +1037,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/umpirsky/zymfony-validator.git",
-                "reference": "9f10615a6193600d788c7c2e9724fa7c33faf40a"
+                "reference": "2aafca265fdb46f371c95e46938ecc311a6e89b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/umpirsky/zymfony-validator/zipball/9f10615a6193600d788c7c2e9724fa7c33faf40a",
-                "reference": "9f10615a6193600d788c7c2e9724fa7c33faf40a",
+                "url": "https://github.com/umpirsky/zymfony-validator/zipball/2aafca265fdb46f371c95e46938ecc311a6e89b5",
+                "reference": "2aafca265fdb46f371c95e46938ecc311a6e89b5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "symfony/validator": "2.1.2",
-                "zendframework/zend-validator": "2.0.2"
+                "zendframework/zendframework": "2.0.2"
             },
-            "time": "1348874502",
+            "time": "1348935152",
             "type": "library",
             "installation-source": "source",
             "autoload": {
