@@ -87,4 +87,8 @@ $app->register(new AsseticExtension(), array(
     })
 ));
 
+$app->register(new Silex\Provider\DoctrineServiceProvider(), array(
+    'db.options' => $app['doctrine.dsn']
+));
+
 return $app;
