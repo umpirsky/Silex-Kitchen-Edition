@@ -26,6 +26,13 @@ class Post
      */
     private $title;
 
+    /**
+     * @Column(type="string")
+     *
+     * @var string
+     */
+    private $content;
+
     public function getId()
     {
         return $this->id;
@@ -44,5 +51,15 @@ class Post
     public function setTitle($title)
     {
         $this->title = $title;
+    }
+
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+    public function setContent($content)
+    {
+        $this->content = $content;
     }
 }
