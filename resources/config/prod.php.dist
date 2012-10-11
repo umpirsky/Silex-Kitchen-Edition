@@ -30,9 +30,10 @@ $app['assetic.filter.yui_compressor.path'] = '/usr/share/yui-compressor/yui-comp
 
 
 $app['doctrine_orm.config'] = array(
-    'doctrine_orm.entities_path'         => __DIR__.'/../../src/Lx/Entity/',
-    'doctrine_orm.proxies_path'          => __DIR__.'/../../cache/proxies',
-    'doctrine_orm.proxies_namespace'     => 'Lx\Proxies',
+    'doctrine_orm.entities_path'         => __DIR__.'/../../src/Lx/Entity',
+    'doctrine_orm.proxies_path'          => $app['cache.path'] . '/doctrine/proxies',
+    'doctrine_orm.proxies_namespace'     => 'Lx\Proxy',
+    'doctrine_orm.metadata_cache'        => new \Doctrine\Common\Cache\FilesystemCache($app['cache.path'] . '/cache/doctrine/metadata'),
     'doctrine_orm.connection_parameters' => array(
         'driver'   => 'pdo_mysql',
         'host'     => 'localhost',
