@@ -1,6 +1,6 @@
-/cache/*
-/composer.phar
-/log/*
-/vendor/
-/web/assets/*
-/resources/config/prod.php
+cache/*
+composer.phar
+log/*
+vendor/
+web/assets/*
+resources/config/prod.php
