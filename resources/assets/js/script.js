@@ -12,6 +12,8 @@
          */
         var loadContent = function(url) {
             $.get(url, function(data) {
+                $('.nav li').removeClass('active');
+                $('a[href="' + url + '"]').parent().addClass('active');
                 $('#main').html(data);
             });
         };
