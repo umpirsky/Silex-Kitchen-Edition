@@ -3,3 +3,4 @@
 /log/*
 /vendor/
 /web/assets/*
+/resources/config/prod.php

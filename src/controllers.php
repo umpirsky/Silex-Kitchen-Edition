@@ -63,7 +63,7 @@ $app->match('/doctrine', function() use ($app) {
     return $app['twig']->render(
         'doctrine.html.twig',
         array(
-            'posts' => $app['db']->fetchAll('SELECT * FROM post')
+            'posts' =>  $app['doctrine_orm.em']->getRepository('Lx\Entity\Post')->findAll()
         )
     );
 })->bind('doctrine');

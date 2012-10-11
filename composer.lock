@@ -1,5 +1,5 @@
 {
-    "hash": "7e5cbb1de594d56acb108590bf7a1fd4",
+    "hash": "9b04d6947f44c1b7e6946e20edec72af",
     "packages": [
         {
             "name": "doctrine/common",
@@ -131,6 +131,76 @@
                 "persistence",
                 "dbal",
                 "queryobject"
+            ]
+        },
+        {
+            "name": "doctrine/orm",
+            "version": "2.3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/doctrine/doctrine2.git",
+                "reference": "564ec1ee2a6a439312ee9105a2a076af7c992e5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/doctrine/doctrine2/zipball/564ec1ee2a6a439312ee9105a2a076af7c992e5b",
+                "reference": "564ec1ee2a6a439312ee9105a2a076af7c992e5b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "ext-pdo": "*",
+                "symfony/console": "2.*",
+                "doctrine/dbal": "2.3.*"
+            },
+            "suggest": {
+                "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
+            },
+            "time": "1349472005",
+            "bin": [
+                "bin/doctrine",
+                "bin/doctrine.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.3.x-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Doctrine\\ORM": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com",
+                    "homepage": "http://www.jwage.com/"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com",
+                    "homepage": "http://www.instaclick.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                }
+            ],
+            "description": "Object-Relational-Mapper for PHP",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "database",
+                "orm"
             ]
         },
         {
@@ -274,6 +344,47 @@
                 "log",
                 "logging"
             ]
+        },
+        {
+            "name": "palma/DoctrineORMServiceProvider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/palmasev/DoctrineORMServiceProvider.git",
+                "reference": "8d145799a4547b0e9a44a1c9b7dad5a501fdd4fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/palmasev/DoctrineORMServiceProvider/zipball/8d145799a4547b0e9a44a1c9b7dad5a501fdd4fb",
+                "reference": "8d145799a4547b0e9a44a1c9b7dad5a501fdd4fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "silex/silex": "1.0.*",
+                "doctrine/orm": "2.3.*"
+            },
+            "require-dev": {
+                "silex/silex": "1.0.*"
+            },
+            "time": "1348563082",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Palma\\Silex\\Provider": "lib/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Francisco Javier Palma Moreno",
+                    "email": "palmasev@gmail.com"
+                }
+            ],
+            "description": "A Silex DoctrineORM Service provider"
         },
         {
             "name": "pimple/pimple",
@@ -1218,6 +1329,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "silex/silex": 20,
-        "mheap/silex-assetic": 20
+        "mheap/silex-assetic": 20,
+        "palma/doctrineormserviceprovider": 20
     }
 }
